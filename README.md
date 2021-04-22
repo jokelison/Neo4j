@@ -25,10 +25,10 @@ load csv with headers from "file:///user-device.csv" as line\
 match (fr:user{user_id:line.user_id}),(to:device{device_id:line.device_id})\
 merge (fr)-[r:use]->(to)\
 
-### (x:y) 其中x为结点名字（neo4j并不能用它作为条件查询），y为节点别名（label）：请注意此处label不同与建模中的label，此处label是别名，这个可以用来查询\
-### {x:y} 其中x为属性名称，y为属性值\
-### [x:y] 其中x为关系节点（虚，实际不存在），y为关系别名。关系后面同样可以添加属性。\
-### 节点x.y 此时y为x节点中的属性名，注意此时不是用节点的别名\
+##### (x:y) 其中x为结点名字（neo4j并不能用它作为条件查询），y为节点别名（label）：请注意此处label不同与建模中的label，此处label是别名，这个可以用来查询\
+##### {x:y} 其中x为属性名称，y为属性值\
+##### [x:y] 其中x为关系节点（虚，实际不存在），y为关系别名。关系后面同样可以添加属性。\
+##### 节点x.y 此时y为x节点中的属性名，注意此时不是用节点的别名\
 
 
 >PS:在对节点进行查询时，主要是依靠节点的别名。而节点的名，其实更倾向于是一个变量
