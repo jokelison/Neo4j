@@ -40,6 +40,11 @@ merge (fr)-[r:use]->(to)\
 >return from.user_id,a
 >>其中with处，from不能换成from.user_id，即此处仅能够填节点名称
 >>with 其实就是代替了sql中的gruopby函数，即with就相当于分组了，表内仅剩下分组的内容
+
+直接分组：
+>match (from:userip)-[rel:in]-(to:user)
+>return from.ip,count(rel)
+
 <img width="906" alt="截屏2021-04-22 下午5 29 55" src="https://user-images.githubusercontent.com/30766357/115691160-5d3f9c00-a390-11eb-8a96-7af82389fb9c.png">
 
 子查询：
