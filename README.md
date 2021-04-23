@@ -42,3 +42,6 @@ merge (fr)-[r:use]->(to)\
 >>with 其实就是代替了sql中的gruopby函数，即with就相当于分组了，表内仅剩下分组的内容
 <img width="906" alt="截屏2021-04-22 下午5 29 55" src="https://user-images.githubusercontent.com/30766357/115691160-5d3f9c00-a390-11eb-8a96-7af82389fb9c.png">
 
+子查询：
+<img width="955" alt="截屏2021-04-23 下午4 57 46" src="https://user-images.githubusercontent.com/30766357/115846978-0a7be800-a455-11eb-96f8-630836eac989.png">
+
